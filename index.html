@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link href="./js/Swiper-3.3.1/dist/css/swiper.min.css" type="text/css" rel="stylesheet">
+<link href="./css/common.css" type="text/css" rel="stylesheet">
+<link href="./css/mainContent.css" type="text/css" rel="stylesheet">
+ <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.swiper-container-horizontal>.swiper-pagination-bullets{
+	bottom:55px !important;
+}
+.swiper-button-prev{
+	left:50%;
+	margin-left:-463px;
+	background:url(./images/left.png) no-repeat;
+}
+.swiper-button-next{
+	right:50%;
+	margin-right:-463px;
+	background:url(./images/right.png) no-repeat;
+}
+.vjs-big-play-centered .vjs-big-play-button{
+	top:44% !important;
+	left:54% !important;
+}
+.video-js .vjs-big-play-button{
+	width:1.9em !important;
+	height:1.9em !important;
+	border-radius:1.9em !important;
+}
+/*.gg{position:fixed;
+    top: 1px;
+    right: 201px;
+    width: 263px;
+    height: 76px;
+     border: 1px solid #000; 
+    z-index: 10;
+    background: #fff;
+}
+.gg ul{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.gg ul li{
+	width:100%;
+	height:25px;
+	line-height:25px;
+	padding-left:10px;
+}*/
+.reset{background:#CCF;}
+.reset h2{width:100%;font-size:16px;text-align:center;line-height:50px;color:#333;font-weight:400;margin-bottom:30px;}
+.change,.btn{width:100%;
+height:30px;margin-bottom:30px;}
+.change input,.btn input{border:none;background:none;}
+.change .left{width:90px;height:100%;text-align:right;line-height:30px;float:left;font-size:14px;color:#333;}
+.change .right{width:190px;height:30px;float:left;}
+.change .right input{width:100%;height:100%;line-height:30px;padding:0 10px;border:1px solid #333;box-sizing:border-box;border-radius:4px;}
+.btn{padding-top:40px;}
+.btn .sure{display:block;width:80px;height:100%;margin-left:200px;border:1px solid #333;border-radius:4px;}
+</style>
+<title>上海交通大学中国医院发展研究院</title>
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部 -->
+	<div class="headerWrap">
+    	<div class="header clearfix">
+        	<div class="logo clearfix"><img src="./images/logo1.png" alt=""><img src="./images/logo2.png" alt=""></div>
+            <div class="loginAndSearch">
+            	<div class="login clearfix">
+                	<div class="gg">
+                    <ul class="list">
+                        <li><a href="#">公告1公告公告公告公告公告公告公告</a></li></ul></div>
+                	<span id="userName" data-fastRegister>Hi,zengzeng</span>&nbsp;|&nbsp;<span ><a href="login.html">退出登录</a> </span>
+           		
+                </div>
+                <div class="search clearfix">
+                	<form action="#" method="">
+                    	<div class="left"><input type="text"></div>
+                        <div class="right"><input type="button"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="gg">
+     	<ul class="list">
+        	<li><a href="#">公告1公告公告公告公告公告公告公告</a></li>
+            <li><a href="#">公告2公告公告公告公告公告公告公告</a></li>
+            <li><a href="#">公告3公告公告公告公告公告公告公告</a></li>
+            <li><a href="#">公告4公告公告公告公告公告公告公告</a></li>
+            <li><a href="#">公告5公告公告公告公告公告公告公告</a></li>
+            <li><a href="#">公告6公告公告公告公告公告公告公告</a></li>
+        </ul>
+     </div>-->
+  
+    <div class="contentWrap">
+    	<!-- 导航 -->
+    	<div class="navWrap">
+        	<div class="nav clearfix">
+            	<ul>
+                	<li><a href="index.html">首页</a></li>
+                    <li class="secondLi"><a href="#">机构设置</a>
+                    	<ul class="hide">
+                        	<li><a href="#">简介</a></li>
+                            <li><a href="#">组织架构</a></li>
+                            <li><a href="#">理事会</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="learning.html">学术交流</a></li>
+                    <li><a href="#">学位培养</a></li>
+                    <li><a href="#">专业培训</a></li>
+                    <li><a href="#">学术研究</a></li>
+                    <li><a href="#">信息资源</a></li>
+                    <li><a href="#">基金会</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- swriper -->
+        <div class="mainPhoto">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/swiper1 .png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/swiper1 .png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/swiper1 .png" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- news -->
+        <div class="mainMessage">
+        	<div class="messageWrap clearfix">
+            	<div class="message">
+                	<div class="pic"><img src="./images/pic_1.jpg" alt=""></div>
+                    <div class="text">
+                    	<p>新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</p>
+                    	<a href="#">查看更多</a>
+                    </div>
+                </div>
+                <div class="message">
+                	<div class="pic"><img src="./images/pic_2.jpg" alt=""></div>
+                    <div class="text">
+                    	<p>新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</p>
+                    	<a href="#">查看更多</a>
+                    </div>
+                </div>
+                <div class="message">
+                	<div class="pic"><img src="./images/pic_3.jpg" alt=""></div>
+                   <div class="text">
+                    	<p>新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻闻新闻新闻新闻新闻新闻新闻新闻新闻</p>
+                    	<a href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 视频 -->
+        <div class="audioAndNews">
+        	<div class="audioAndNewsWrap clearfix">
+            	<div class="audio">
+                	<div class="title">视频简介</div>
+                    <div class="resouse">
+                     	<!--<img src="../images/audio.jpg" alt="">-->
+                    	<video id="homeVideo" class="video-js vjs-default-skin vjs-big-play-centered" width="406px" height="217px" controls poster="./images/audio.jpg">
+                    	<source src="./vedio/4217074-102-008-2106_2[5].mp4" type="video/mp4">
+                        </video>
+                     </div>
+                </div>
+                <div class="news">
+                	<div class="title"><span>新闻</span><a href="#">查看更多</a></div>
+                    <div class="newsList clearfix">
+                    	<ul>
+                        	<li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                            <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                            <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                            <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                            <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                            <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                             <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                              <li><a href="#"><span class="left">汇聚世界力量，铸就健康中国汇聚世界力量，铸就健康中国</span><span class="right">2016-8-17</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 资讯 -->
+        <div class="meetingInfo">
+        	<div class="meetingInfoWrap">
+            	<div class="meeting">
+                	<div class="title"><span>会议简讯</span><a href="#">查看更多</a></div>
+                    <div class="content clearfix">
+                    	<div class="left"></div>
+                        <div class="right">
+                        	<ul>
+                            	<li><a href="#">汇聚世界力量，健铸就健铸就健铸就铸就健铸就健铸就铸就健健康</a></li>
+                                <li><a href="#">汇聚世界力量，铸就健铸就健铸就健铸就健铸就健健铸就健铸就康</a></li>
+                                <li><a href="#">汇聚世界力量，健铸健铸就健铸就健铸就就健铸就铸就健铸就健康</a></li>
+                                <li><a href="#">汇聚世界力量，健铸健铸就健铸就健铸就就健铸就铸就健铸就健康</a></li>
+                                <li><a href="#">汇聚世界力量，健铸健铸就健铸就健铸就就健铸就铸就健铸就健康</a></li>
+                                <li><a href="#">汇聚世界力量，健铸健铸就健铸就健铸就就健铸就铸就健铸就健康</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="meeting infoOnLoad">
+                	<div class="title"><span>资料下载</span><a href="dataOnLoad.html">查看更多</a></div>
+                    <div class="content clearfix">
+                    	<div class="left"></div>
+                        <div class="right">
+                        	<ul>
+                            	<li><a class="info" href="#">汇聚世界力量，铸就健康铸就健铸就铸就健健铸就健</a><a href="#" class="onload">下载</a></li>
+                                <li><a class="info" href="#">汇聚世界力量，铸就健铸就健铸就健铸铸就健铸就健就健康</a><a href="#" class="onload">下载</a></li>
+                                <li><a class="info" href="#">汇聚世界力量，铸就铸就健铸就健铸就健铸就健铸就健健康</a><a href="#" class="onload">下载</a></li>
+                                <li><a class="info" href="#">汇聚世界力量，铸就铸就健铸就健铸就健铸就健铸就健健康</a><a href="#" class="onload">下载</a></li>
+                                <li><a class="info" href="#">汇聚世界力量，铸就铸就健铸就健铸就健铸就健铸就健健康</a><a href="#" class="onload">下载</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     
+     
+    <!--footer-->
+    <div class="footer">
+        <div class="footerWrap">
+            <div class="address">
+                地址：中国上海重庆南路227弄东4楼208室
+            </div>
+            <div class="postCode">邮编：200025</div>
+            <div class="telephone">电话：021-63846590转776621</div>
+        </div>
+         <div class="friendLink clearfix"> 
+         	<p>友情链接:</p>
+            <ul>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                 <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+            </ul>
+       </div>
+    </div>    
+</div>
+</div>
+<div class="box-sel hide" id="data_change" style="border-radius:4px;">
+<!--<span class="layui-layer-setwin"><a class="layui-layer-ico layui-lay-close layui-layer-close1" href="javascript:;"></a></span>-->
+    <div class="reset clearfix ">
+        <h2>密码修改<span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span></h2>
+        <form action="#" method="">
+            <div class="change"><div class="left">新密码：</div><div class="right"><input type="password"></div></div>
+            <div class="change"><div class="left">确认新密码：</div><div class="right"><input type="password"></div></div>
+           <div class="btn"> <input class="sure" type="submit" value="提交" ></div>
+        </form>
+    </div>
+</div>
+<script src="./js/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+<script src="./js/video.js/video.min.js"></script>
+<link href="./js/video.js/video-js.min.css" type="text/css" rel="stylesheet">
+<script src="./js/video.js/videojs-ie8.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/layer/layer.js"></script>
+<script>
+$(function(){
+	/*second menu*/
+	$(".nav li").mouseenter(function(){
+		$(this).children("li.secondLi ul").show();
+	}).mouseleave(function(){
+		$(this).children("li.secondLi ul").stop().hide();	
+	})
+})
+//swiper初始化
+var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		pagination:'.swiper-pagination',
+		loop:true,
+		nextButton:'.swiper-button-next',
+		prevButton:'.swiper-button-prev'
+});
+
+//视频
+$(function(){
+	videojs("homeVideo",{
+		"controls":true, 
+		"autoplay":false,
+		"preload":"auto",
+		"width":406,
+		"height":217,
+		controlBar:{
+			fullSCreenToggle:false
+		}
+	})
+})
+
+function autoScroll(obj){
+	$(obj).find(".list").animate({
+		marginTop:"-25px"
+	},1000,function(){
+		$(this).css({marginTop:"0px",}).find("li:first").appendTo(this);
+	})
+}
+$(function(){
+	setInterval("autoScroll('.gg')",3000)
+})
+$(document).on("click","[data-fastRegister]",function(){
+	layer.open({
+		type:1,
+		title:false,
+		closeBtn:0,
+		mover:false,
+		area:["302px","300px"],
+		content:$("#data_change")
+	})
+})
+</script>
+</body>
+</html>
