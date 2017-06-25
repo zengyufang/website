@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link href="./js/Swiper-3.3.1/dist/css/swiper.min.css" type="text/css" rel="stylesheet">
+<link href="./css/common.css" type="text/css" rel="stylesheet">
+<link href="./css/mainContent.css" type="text/css" rel="stylesheet">
+<link href="./js/jquery-validation/jquery.validate.css" type="text/css" rel="stylesheet">
+ <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<title>登录</title>
+<style>
+label.error{
+	color:#F30;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部 -->
+    <div class="bigBg">
+        <div class="headerWrap headerLogin">
+            <div class="header">
+                <div class="logo clearfix"><img src="../images/logo1.png" alt=""><img src="./images/logo2.png" alt=""></div>
+            </div>
+        </div>
+       <!-- 中间部分 --> 
+        <div class="contentWrap clearfix">
+            <!-- 导航 -->
+            <div class="navWrap">
+                <div class="nav clearfix">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li class="secondLi"><a href="#">机构设置</a>
+                            <ul class="hide">
+                                <li><a href="#">简介</a></li>
+                                <li><a href="#">组织架构</a></li>
+                                <li><a href="#">理事会</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="learning.html">学术交流</a></li>
+                        <li><a href="#">学位培养</a></li>
+                        <li><a href="#">专业培训</a></li>
+                        <li><a href="#">学术研究</a></li>
+                        <li><a href="#">信息资源</a></li>
+                        <li><a href="#">基金会</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- login -->
+            <div class="loginWrap clearfix">
+                <div class="login">
+                	<h2>登录账户</h2>
+                    <p>欢迎登录上海交通大学医学院网站！</p>
+                    <form id="loginForm" action="#" method="">
+                        <div class="item clearfix">
+                            <div class="left"></div>
+                            <div class="right"><input type="text" placeholder="请输入用户名" name="username"></div>
+                         </div>
+                         <div class="item itemPassword clearfix">
+                            <div class="left password"></div>
+                            <div class="right"><input type="password" placeholder="请输入登录密码" name="password"></div>
+                         </div>
+                         <div class="checkCode clearfix">
+                            <div class="check">
+                            	<div class="left checkIco"></div>
+                            	<div class="right"><input type="text" placeholder="请输入验证码" name="code"></div>
+                            </div>
+                            <div class="code">3wf5</div>
+                            <div class="refrsh"><a href="#">刷新</a></div>
+                         </div>
+                          <div class="auto"><label><input type="checkbox" ><span>自动登录</span></label></div>
+                          <input class="logining" type="submit" value="立即登录">
+                    </form>
+                </div>
+           </div>
+        </div>
+    </div> 
+    <!--footer-->
+    <div class="footer">
+        <div class="footerWrap clearfix">
+            <div class="address"> 
+                地址：中国上海重庆南路227弄东4楼208室
+            </div>
+            <div class="postCode">邮编：200025</div>
+            <div class="telephone">电话：021-63846590转776621</div>
+        </div>
+        <div class="friendLink clearfix"> 
+         	<p>友情链接:</p>
+            <ul>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                 <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+                <li><a href="#">百度百度百度</a></li>
+            </ul>
+       </div>
+    </div>
+</div>
+
+<script src="./js/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+<script src="./js/jquery-validation/jquery.validate.min.js"></script>
+<script src="./js/jquery-validation/localization/messages_zh_CN.js"></script>
+<script src="./js/common.js"></script>
+<script>
+$(function(){
+	var Height = $(window).height();
+	var BgHeight = Height -$(".footer").height();
+	$("bigBg").css("height",BgHeight);
+	/*second menu*/
+	$(".nav li").mouseenter(function(){
+		$(this).children("li.secondLi ul").show();
+	}).mouseleave(function(){
+		$(this).children("li.secondLi ul").stop().hide();	
+	})
+	/*验证*/
+	$("#loginForm").validate({
+		rules:{
+			username:{
+				required:true
+			},
+			password:{
+				required:true
+			},
+			code:{
+				required:true
+			}
+		},
+		messages:{
+			username:{
+				required:"请输入用户名"
+			},
+			password:{
+				required:"请输入登录密码"
+			},
+			code:{
+				required:"请输入验证码"
+			}	
+		}
+	});
+	
+})
+
+
+</script>
+</body>
+</html>
