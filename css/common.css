@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+html{font-size:62.5%;width:100%;}
+body{font-size: 12px;color: #999;font-family: "Microsoft yahei", "微软雅黑", Helvetica, sans-serif, Arial;background-color:#fff;}
+*{margin: 0;padding: 0;}
+a{color:#666;text-decoration:none;}
+a:hover{color:#336600;text-decoration: none;}
+input:focus{outline:none;}
+textarea { resize:none; } //禁用了文本的拖拉，尤其在谷歌下
+p{ text-align:justify; text-justify:distribute;} //为了使文本段落左右两边
+:-moz-placeholder { 
+    color: #c3c3c3;  
+}
+
+::-moz-placeholder { 
+    color: #c3c3c3;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #c3c3c3;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c3c3c3;
+}
+
+-webkit-text-size-adjust: none;
+select:focus{outline:none;}
+textarea:focus{outline:none;}
+img{border:0 none;}
+ul,li{list-style: none;}
+.clear{clear:both;}
+.clearfix:after{clear:both;content:"";display:table;}
+.clearfix{*zoom:1;}
+em{font-style:normal}	
+table{border-collapse: collapse;}
+.hide{display:none;}
+/* reset end*/
+
+.wrap{
+	width:100%;
+	min-width:1024px;
+	margin:0 auto;
+	background:url(../images/bg_ico2.png);
+}
+/* header start*/
+.headerWrap{
+	width:100%;
+	height:80px;
+	background:url(../images/bg_ico1.png);
+	overflow:hidden;
+}
+.header{
+	width:1024px;
+	height:80px;
+	margin:0 auto;
+	padding:0 42px;
+	box-sizing:border-box;
+}
+.header .logo{
+	float:left;
+	width:446px;
+	height:60px;
+	margin-top:10px;
+}
+.header .logo img:first-child{
+	display:block;
+	float:left;
+	width:60px;
+	height:60px;
+}
+.header .logo img:last-child{
+	display:block;
+	float:right;
+	width:353px;
+	height:53px;
+	margin-top:6px;
+}
+.header .loginAndSearch{
+	float:right;
+	width:auto;
+	height:71px;
+	text-align:right;
+}
+.header .login{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	color:#bfbfbf;
+}
+.header .login a{
+	font-size:14px;
+	color:#bfbfbf;
+}
+.header .login a:hover{
+	color:#F00;
+}
+.header .search{
+	width:251px;
+	height:24px;
+	margin-left:149px;
+	margin-top:8px;
+	
+}
+.header .search .left{
+	width:214px;
+	height:24px;
+	float:left;
+	background:#fff;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	color:#ccc;
+}
+.header .search .right{
+	width:37px;
+	height:24px;
+	float:left;
+	background:url(../images/audio_pic.png) no-repeat center center;
+	
+}
+.header .search .left input{
+	display:block;
+	background:none;
+	border:none;
+	width:198px;
+	height:24px;
+	color:#999;
+	line-height:24px;
+	padding:0 8px;
+}
+.header .search .right input{
+	display:block;
+	background:none;
+	border:none;
+	width:37px;
+	height:24px;
+	cursor:pointer;
+}
+/*header end*/
+/*nav start*/
+.contentWrap{
+	width:100%;
+	position:relative;
+}
+.navWrap{
+	width:100%;
+	height:36px;
+	position:absolute;
+	top:0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index:10;
+}
+.navWrap .nav{
+	width:1024px;
+	height:36px;
+	margin:0 auto;
+	padding:0 42px;
+	box-sizing:border-box;
+}
+.navWrap .nav ul{
+	height:36px;
+	text-align:center;
+}
+.navWrap .nav ul li{
+	width:80px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	
+	box-sizing:border-box;
+}
+.navWrap .nav ul li a{
+	display:block;
+	color:#fff;
+	font-size:14px;
+}
+.navWrap ul li a:hover,
+.navWrap ul li.active{
+	background:#1a1a1a;
+	color:#fff;
+	height:36px;
+	border-bottom:3px solid #0093dd;
+	box-sizing:border-box;
+}
+.navWrap li.secondLi{
+	position:relative;
+}
+.navWrap li.secondLi:hover{
+	background:#1a1a1a;
+	color:#fff;
+	height:35px;
+	border-bottom:3px solid #0093dd;
+	box-sizing:border-box;
+}
+.navWrap li.secondLi ul{
+	width:120px;
+	height:auto;
+	position:absolute;
+	top:36px;
+	left:0;
+	margin-left:0;
+	background: rgba(0, 0, 0, 0.6);
+	overflow:hidden;
+	z-index:10;
+}
+.navWrap li.secondLi ul li{
+	width:120px;
+	height:35px;
+	line-height:35px;
+	text-align:left;
+	border-top:1px solid #999;
+}
+
+.navWrap li.secondLi ul li a{
+	display:block;
+	color:#fff;
+	font-size:14px;
+	padding-left:10px;
+}
+.navWrap li.secondLi ul li a:hover{
+	background:#0093dd
+}
+
+/*nav end*/
+/* friendLink start*/
+.friendLink{
+	width:1024px;
+	height:auto;
+	margin:0 auto;
+	padding:0 42px;
+	box-sizing:border-box;
+	margin-top:20px;
+}
+.friendLink p{
+	width:80px;
+	height:20px;
+	float:left;
+	font-size:16px;
+	color:#eee;
+	line-height:20px;
+	margin-left:10px;
+}
+.friendLink ul{
+	float:left;
+	width:850px;
+	max-height:24px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.friendLink ul li{
+	width:138px;
+	float:left;
+	line-height:20px;
+	padding:0 2px;
+	text-align:center;
+	/*border-right:1px solid #eee;*/
+	margin-bottom:5px;
+	box-sizing:border-box;
+}
+.friendLink ul li:last-child,
+.friendLink ul li:nth-child(6n+0){
+	border:none;
+}
+.friendLink ul li a{
+	color:#F60;
+	font-size:14px;
+}
+.friendLink ul li a:hover{
+	color:#06C;
+}
+/* friendLink end*/
+/*footer start*/
+.footer{
+	width:100%;
+	height:auto;
+	background:url(../images/foot.png) no-repeat center center;
+	background-size:cover;	
+}
+.footerWrap{
+	width:568px;
+	height:139px;
+	margin:0 auto;
+/*	border-bottom:1px solid #999;*/	
+}
+.footerWrap .address{
+	width:164px;
+	height:60px;
+	float:left;
+	padding-top:80px;
+	background:url(../images/ico_4.png) no-repeat center 30px;
+	text-align:center;
+	line-height:26px;
+	font-size:14px;
+	margin-right:38px;
+}
+.footerWrap .postCode{
+	width:164px;
+	height:60px;
+	float:left;
+	padding-top:80px;
+	background:url(../images/ico_6.png) no-repeat center 30px;
+	text-align:center;
+	line-height:26px;
+	font-size:14px;
+	margin-right:38px;
+}
+.footerWrap .telephone{
+	width:164px;
+	height:60px;
+	float:left;
+	padding-top:80px;
+	background:url(../images/ico_5.png) no-repeat center 30px;
+	text-align:center;
+	line-height:26px;
+	font-size:14px;
+}
+/*footer end*/
+.login span:first-child{
+	display:block;
+	float:left;
+	height:35px;
+}
+.login span:last-child{
+	display:block;
+	float:right;
+	height:35px;
+	line-height:35px;
+}
+.login .gg{
+	float:left;
+	width:260px;
+	height:35px;
+}
+.login .gg ul{
+	width:100%;
+	height:35px;
+	overflow:hidden;
+	text-align:left;
+}
+.login .gg ul li{
+	width:100%;
+	height:35px;
+	line-height:35px;
+}
+.login .gg ul li a{
+	color:#09F;
+}
+.login .gg ul li a:hover{
+	color:#09F;
+}
